@@ -1,73 +1,35 @@
-# Bank Customer Churn Prediction Using CHAID Decision Tree in IBM SPSS Modeler
+# Predictive Analysis of Car Price Segmentation Using SPSS
+
 
 ## Overview
-This project predicts bank customer churn using the CHAID (Chi-squared Automatic Interaction Detection) decision tree algorithm in IBM SPSS Modeler. It analyzes customer demographics, tenure, and financial behavior to identify key drivers of churn and assist banks in developing effective customer retention strategies.
+This project used IBM SPSS Modeler 18.6 to build a CHAID (Chi-squared Automatic Interaction Detection) Decision Tree on car sales data. The model achieved 94.27% Overall Accuracy in predicting the "High Price" segment (defined by the 75th percentile), confirming Mileage as the most significant factor.
 
 ## Problem Statement
-In the modern banking industry, customer retention is one of the most pressing challenges. 
-With the rapid digital transformation of financial services and the increasing number of 
-competitors offering similar products, customers can easily switch banks in search of better 
-rates, convenience, or service quality. This phenomenon, known as customer churn, directly 
-impacts a bank’s revenue, profitability, and brand trust. Acquiring a new customer often costs 
-several times more than retaining an existing one, making churn prevention both a strategic 
-and financial necessity.
+The used car market lacks an objective, data-driven methodology to accurately classify vehicles into high-value and standard-value segments. Without this clarity, businesses struggle with optimal pricing, inventory management, and targeted marketing of premium stock. 
 
 ## Objective
-To build and evaluate a CHAID decision tree model that:
-- Classifies customers as likely to churn or stay.
-- Identifies key churn predictors.
-- Provides interpretable decision rules for actionable business insights.
+To identify which car attributes (like Mileage, Engine Size, and Year) are the most significant drivers of high market value, achieving a reliable price prediction model.
 
 ## Dataset
-**Source:** [Kaggle – Bank Customer Churn Data](https://www.kaggle.com/datasets/pentakrishnakishore/bank-customer-churn-data)
-
-**Key Attributes:**
-- Demographics: Age, Gender, Occupation, City  
-- Account Tenure: Account vintage (years)  
-- Financial Data: Balance, Net Worth, Credit Score  
-- Behavioral Data: Monthly transactions, Product usage  
-- Target: Churn (Yes/No)
+**Source:** [Kaggle – Global Car Sales Data](https://www.kaggle.com/code/devraai/global-car-sales-data-analysis-and-modeling/input?select=car_sales_data.csv)
 
 ## Tools and Technologies
 - IBM SPSS Modeler – for data modeling and visualization  
 - CHAID Algorithm – for decision tree-based classification  
-- Kaggle Dataset – real-world banking churn data  
+- Kaggle Dataset – global car sales dataset  
 - MS Excel / CSV – for data preprocessing
 
 ## Methodology
-1. **Data Import:** Loaded dataset into IBM SPSS Modeler and verified column integrity.  
-2. **Data Preparation:** Cleaned and standardized data, handled missing values.  
-3. **Variable Assignment:** Defined churn as the target variable and assigned predictor roles.  
-4. **Model Configuration:** Set CHAID parameters including significance level and maximum tree depth.  
-5. **Model Execution:** Trained the CHAID model and generated decision tree outputs.  
-6. **Result Interpretation:** Analyzed node splits and extracted churn-related business rules.
-
-## Results
-- Key churn predictors: Account tenure, balance, transaction frequency, and age.  
-- CHAID model provided interpretable segmentation with clear decision rules.  
-- Findings enable targeted retention actions and reduced attrition costs.
+1. **Data Understanding and Preparation:** Loaded dataset into IBM SPSS Modeler and verified column integrity.  
+2. **Data Transformation and Feature Engineering:** Target Creation and Field Filtering.  
+3. **Modeling and Validation Setup:** Partioning.  
+4. **Model Building:** Set CHAID parameters including significance level and maximum tree depth.  
+5. **Evaluation and Visualization:** Performance Assessment and Model Interpretation.  
 
 ## Conclusion
-The CHAID decision tree effectively identifies customer segments with higher churn likelihood. By applying this model, banks can proactively implement retention strategies, reduce acquisition costs, and improve overall profitability through data-driven insights.
+The CHAID model achieved high overall accuracy (94.27%). While it is slightly better at identifying 'Standard Price' cars (96.80\%), it still has a very strong 86.30% success rate in correctly identifying the target 'High Price' segment. This demonstrates that the features selected by the model are highly effective at differentiating high-value vehicles.
 
-![IBM SPSS Modeler Stream Preview](asset/Screenshot%202025-10-28%20003500.png)
-
-### IBM SPSS Modeler Stream Preview
-
-The image above provides a preview of the workflow built in IBM SPSS Modeler to predict bank customer churn using the CHAID (Chi-squared Automatic Interaction Detection) algorithm. It visually represents the data preparation, model building, and evaluation steps involved in the analysis.
-
-The flow includes:
-- Data import from the `churn_prediction.csv` file.
-- Processing of customer demographics, financial data, and churn flags.
-- Application of the CHAID decision tree algorithm to segment customers based on churn likelihood.
-- Evaluation of model performance through various aggregated results.
-
-
-## Future Work
-- Compare CHAID performance with advanced algorithms (Random Forest, XGBoost).  
-- Integrate results into a real-time churn prediction dashboard.  
-- Include sentiment analysis and behavioral data for improved model accuracy.  
-- Automate retention campaign recommendations.
+![IBM SPSS Modeler Stream Preview](asset/Screenshot%202025-11-06%20123416.png)
 
 ## Project Structure
 ```
@@ -75,7 +37,7 @@ bank-customer-churn-prediction-chaid-spss/
 │
 ├── asset/
 │   └── screenshot.png               # Stream screenshot
-├── bank_customer_churn.pdf          # Detailed workflow and results
+├── Final_P.pdf                      # Detailed workflow and results
 ├── PROBLEM STATEMENT.pdf            # Problem background
 ├── dataset.csv                      # Input dataset (from Kaggle)
 ├── stream                           # IBM SPSS Modeler stream (CHAID model workflow)
@@ -83,6 +45,6 @@ bank-customer-churn-prediction-chaid-spss/
 ```
 
 ## Author
-**Akbar Naeem**  
+**Ayan Khan**  
 *Babu Banarasi Das University*  
-*Supervisor: Mr. Vikas Kumar*
+*Supervisor: Mr. Robin Tyagi*
