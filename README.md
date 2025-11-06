@@ -33,14 +33,14 @@ The CHAID model achieved high overall accuracy (94.27%). While it is slightly be
 
 ## Project Structure
 ```
-bank-customer-churn-prediction-chaid-spss/
+Analysis-of-Car-Price-Segmentation/
 │
 ├── asset/
 │   └── screenshot.png               # Stream screenshot
 ├── Final_P.pdf                      # Detailed workflow and results
 ├── PROBLEM STATEMENT.pdf            # Problem background
 ├── dataset.csv                      # Input dataset (from Kaggle)
-├── stream                           # IBM SPSS Modeler stream (CHAID model workflow)
+├── Final_P_stream                   # IBM SPSS Modeler stream (CHAID model workflow)
 └── README.md                        # Project documentation
 ```
 
